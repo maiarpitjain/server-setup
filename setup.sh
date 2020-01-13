@@ -3,7 +3,7 @@ sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]no/c\PasswordAuthentication
 
 sudo service sshd restart
 
-sudo echo 'Ahead@123' | passwd ec2-user --stdin
+sudo echo 'Ahead@123' | sudo passwd ec2-user --stdin
 
 sudo yum install httpd24 php72 mysql57-server -y
 sudo yum install php72-mysqlnd php72-mbstring php72-gd mod24_ssl -y
